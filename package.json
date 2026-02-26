@@ -1,0 +1,12 @@
+{
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "description": "My Portfolio - Full Stack App",
+    "scripts": {
+        "install-all": "cd client && npm install && cd ../server && npm install",
+        "build": "cd client && npm run build",
+        "start": "cd server && node index.js",
+        "dev-client": "cd client && npm run dev",
+        "dev-server": "cd server && npm run dev"
+    }
+}
