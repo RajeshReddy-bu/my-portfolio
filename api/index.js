@@ -1,4 +1,6 @@
-// Vercel Serverless Function entry point
-// Wraps the Express app as a serverless handler
+// Vercel Serverless Function — handles all /api/* routes
 const app = require('../server/index.js');
-module.exports = app;
+
+module.exports = (req, res) => {
+    return app(req, res);
+};
